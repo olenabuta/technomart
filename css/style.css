@@ -9,19 +9,20 @@ body {
 	font-weight: 400;
 	color: #000000;
 
-	background-color: #f3f7f8;
-	background-image: url(../img/bgc.jpg);
-	background-repeat: repeat;
+	background-color: #ffffff;
 }
 
 a {
+	color: #ffffff;
 	text-decoration: none;
 }
 
+/*
 img {
 	width: 100%;
 	height: auto;
 }
+*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -40,3 +41,284 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.btn {
+	display: block;
+	margin: 0;
+	padding: 12px 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ff5357;
+	text-align: center;
+	vertical-align: middle;
+	border: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+/*HEADER*/
+.main-header {
+	background-color: #f3f7f8;
+	background-image: url(../img/bgc.jpg);
+	background-repeat: repeat;
+}
+
+.menu-buy {
+	color: #ffffff;
+	background-color: #33445a;
+}
+
+.logo img {
+	width: 220px;
+	height: 47px;;
+}
+
+.buy-nav {
+	font-size: 17px;
+}
+
+.buy-nav input {
+	font: inherit;
+}
+
+.buy-nav .order {
+	background-color: #6db254;
+}
+
+.header-title {
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ff5357;
+}
+
+.contacts-info p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+	color: #3d546e;
+}
+
+.contacts-info .phone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ff5357;
+}
+
+.user-nav a {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.site-nav {
+	font-size: 17px;
+	background-color: #3d546e;
+}
+
+/**MAIN*/
+.promo-list {
+	color: #ffffff;
+}
+
+.promo-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.promo-item-btn {
+	font-size: 14px;
+}
+
+.promo-list .materials {
+	background-color: #ffbf47;
+}
+
+.promo-list .tool {
+	background-color: #3bbce3;
+}
+
+.promo-list .machinery {
+	background-color: #dc91d8;
+}
+
+.promo-list .discounts {
+	background-color: #8ed78f;
+}
+
+.promo-list .delivery {
+	background-color: #ffc047;
+}
+
+.promo-item .promo-item-btn {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-item.slider {
+	color: #ffffff;
+	background-color: #574536;
+}
+
+.promo-item .slider-title {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.promo-item p {
+	font-family: "PT Sans", Arial, Verdana, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.title-box {
+	background-color: #f9f5f0;
+}
+
+.title-box h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #3d546e;
+}
+
+.popular-goods-list {
+	font-family: "PT Sans", Arial, Verdana, sans-serif;
+}
+
+.good-item {
+	width: 220px;
+	border: 1px solid #aeaeae;
+	text-align: center;
+
+	box-sizing: border-box;
+}
+
+.good-item .good-title {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+.good-item .old-price {
+	font-size: 17px;
+	font-weight: 700;
+	color: #a9a9a9;
+	text-decoration: line-through;
+}
+
+.good-item .new-price {
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.good-buy .buy-btn {
+	background-color: #63a63e;
+}
+
+.good-buy .bookmark-btn {
+	color: #32425c;
+	background-color: #ffffff;
+	border: 3px solid #63a63e;
+}
+
+.manuf-item {
+	width: 220px;
+	height: 145px;
+	border: 1px solid #aeaeae;
+	text-align: center;
+	
+	box-sizing: border-box;
+}
+
+.services {
+	color: #000000;
+	background-color: #f3f7f8;
+	background-image: url(../img/bgc.jpg);
+	background-repeat: repeat;
+}
+
+.services .title,
+.company .title,
+.contacts .title {
+ 	color: #000000;
+	font-size: 30px;
+	line-height: 30px;
+	
+	text-transform: uppercase;
+}
+
+.services p,
+.company p,
+.contacts p {
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.service-btn {
+	color: #ffffff;
+	border: none;
+	background-color: #3d546e;
+}
+
+.sirvice-item-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #3d546e;
+}
+
+.company-list {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+/*FOOTER*/
+.main-footer {
+	font-size: 18px;
+	line-height: 24px;
+	color: #f3f7f9;
+	background-color: #3d546e;
+}
+
+.footer-nav a {
+	color: #f3f7f9;
+}
+
+.footer-promo a {
+	color: #ffda96;
+}
+
+.footer-bottom {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #33445a;
+}
+
+.footer-social {
+	background-color: #29384a;
+}
+
+.feedback a {
+	color: #ffda96;
+}
+
+.developed-by {
+	color: #ffda96;
+}
