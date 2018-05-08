@@ -617,9 +617,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*Section popular-goods*/
-.popular-goods {
-	margin-bottom: 20px;
-}
 
 .title-box {
 	display: flex;
@@ -656,24 +653,27 @@ input[type="radio"].visually-hidden {
 	background-color: #ba2732;
 }
 
-.popular-goods-list {
+.popular-goods-list,
+.manuf-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
-	margin-bottom: 23px;
 	padding: 0;
 	font-family: "PT Sans", Arial, Verdana, sans-serif;
 	list-style: none;
 }
 
-.good-item {
+.good-item,
+.manuf-item {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 220px;
-	border: 1px solid #f9f5f0;
+	margin-bottom: 23px;
+	border: 1px solid #eaeaea;
 	text-align: center;
 
 	box-sizing: border-box;
@@ -794,6 +794,7 @@ input[type="radio"].visually-hidden {
 .good-buy .buy-btn:hover,
 .good-buy .buy-btn:focus {
 	background-color: #5fbb2d;
+	box-shadow: inset 0 -3px 0 #367315;
 }
 
 .good-buy .buy-btn:hover::before,
@@ -803,6 +804,7 @@ input[type="radio"].visually-hidden {
 
 .good-buy .buy-btn:active {
 	background-color: #518534;
+	box-shadow: none;
 }
 
 .good-buy .bookmark-btn {
@@ -823,7 +825,9 @@ input[type="radio"].visually-hidden {
 }
 
 .good-item:hover,
-.good-item:focus {
+.good-item:focus,
+.manuf-item:hover,
+.manuf-item:focus {
 	box-shadow: 0 0 25px rgba(41, 52, 73, .5);
 }
 
@@ -835,13 +839,20 @@ input[type="radio"].visually-hidden {
 	left: 0;
 }
 
+.popular-manufacturers {
+	margin-bottom: 64px;
+}
+
 .manuf-item {
-	width: 220px;
 	height: 145px;
-	border: 1px solid #aeaeae;
-	text-align: center;
+	margin-bottom: 20px;
 	
 	box-sizing: border-box;
+}
+
+.manuf-item:active {
+	box-shadow: 0 0 10px rgba(41, 52, 73, .5);
+	opacity: 0.3;
 }
 
 .services {
