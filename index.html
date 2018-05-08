@@ -13,17 +13,19 @@
 		<section class = "menu-buy">
 			<div class="container">
 				<h2 class="visually-hidden">Навигация по сайту</h2>
-				<a class = "logo">
-					<img src = "img/logo.png" width = "220" height = "47" alt = "Логотип Техномарт">
-				</a>
+				<a class = "btn logo">Техномарт</a>
 				
 				<ul class = "buy-nav">
-					<li>
+					<li class = "search">
 						<label class="visually-hidden" for = "search">Поиск:</label>
 						<input type = "search" name = "search" id = "search" placeholder="Поиск:">
+						<span class = "icon-search">
+							<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+						</span>
+						
 					</li>
-					<li><a href="bookmark.html">Закладки: 0</a></li>
-					<li><a href="basket.html">Корзина: 0</a></li>
+					<li><a class = "bookmark" href="bookmark.html">Закладки: 0</a></li>
+					<li><a class = "basket" href="basket.html">Корзина: 0</a></li>
 					<li><a class = "order" href="order.html">Оформить заказ</a></li>
 				</ul>
 			</div>
@@ -38,22 +40,24 @@
 		 	</section>
 
 			<ul class="user-nav">
-				<li><a class="user-btn" href="checki.html">Войти</a></li>
+				<li><a class="user-btn checkin" href="checkin.html">Войти</a></li>
 				<li><a class="user-btn" href="registration.html">Регистрация</a></li>
 			</ul>
 		</div>
 
-		<nav class="site-nav container">
-			<ul>
-				<li><a>Главная</a></li>
-				<li><a href="company.html">Компания</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="news.html">Новости</a></li>
-				<li><a href="offer.html">Спецпредложения</a></li>
-				<li><a href="delivery.html">Доставка</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<nav class="site-nav">
+				<ul>
+					<li><a>Главная</a></li>
+					<li><a href="company.html">Компания</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="offer.html">Спецпредложения</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	
 	<main>
@@ -103,15 +107,17 @@
 					<img src="img/drills.jpg" width="620" height="266" alt="Дрели">
 				</li>
 
-				<li class="promo-item discounts">
-					<h3>Скидки 50%</h3>
-					<a class = "btn promo-item-btn" href="#">На 350 товаров</a>
-				</li>
-
-				<li class="promo-item delivery">
-					<h3>Доставка</h3>
-					<a class = "btn promo-item-btn" href="#">Бесплатно</a>
-				</li>
+				<div class="promo-item-wrapper">
+					<li class="promo-item discounts">
+						<h3>Скидки 50%</h3>
+						<a class = "btn promo-item-btn" href="#">На 350 товаров</a>
+					</li>
+					
+					<li class="promo-item delivery">
+						<h3>Доставка</h3>
+						<a class = "btn promo-item-btn" href="#">Бесплатно</a>
+					</li>
+				</div>
 			</ul>
 		</section>
 
