@@ -108,17 +108,19 @@
 					<img src="img/drills.jpg" width="620" height="266" alt="Дрели">
 				</li>
 
-				<div class="promo-item-wrapper">
-					<li class="promo-item discounts">
-						<h3>Скидки 50%</h3>
-						<a class = "btn promo-item-btn" href="#">На 350 товаров</a>
-					</li>
+				<li class = "promo-item promo-service">
+					<ul class = "promo-list">
+						<li class="promo-item discounts">
+							<h3>Скидки 50%</h3>
+							<a class = "btn promo-item-btn" href="#">На 350 товаров</a>
+						</li>
 					
-					<li class="promo-item delivery">
-						<h3>Доставка</h3>
-						<a class = "btn promo-item-btn" href="#">Бесплатно</a>
-					</li>
-				</div>
+						<li class="promo-item delivery">
+							<h3>Доставка</h3>
+							<a class = "btn promo-item-btn" href="#">Бесплатно</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</section>
 
@@ -246,55 +248,57 @@
 		<section class="services">
 			<div class="container">
 				<h2 class="title">Сервисы</h2>
-				<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+				<p class = "description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				
-				<ul class = "services-list">
-					<li  class = "service-item active">
-						<button class = "service-btn" type = "button">Доставка</button>
-					</li>
-					<li  class = "service-item">
-						<button class = "service-btn" type = "button">Гарантия</button>
-					</li>
-					<li  class = "service-item">
-						<button class = "service-btn" type = "button">Кредит</button>
-					</li>
-				</ul>
-				
-				<section class = "delivery">
-					<h3 class = "sirvice-item-title">Доставка</h3>
-					<p>
-						Мы с удовольствием доставим ваш товар прямо<br>
-						к вашему подьезду совершенно бесплатно!<br>
-						Ведь мы неплохо заработаем,<br>
-						поднимая его на ваш етаж!
-					</p>
-				</section>
-				
-				<section class = "guarantee">
-					<h3 class = "sirvice-item-title">Гарантия</h3>
-					<p>
-						Если купленный у нас товар поломается или заискрит,<br>
-						а также в случае пожара, спровоцированного его возгаранием,<br>
-						вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-						сгоревшый товарна новый.<br>
-						Дом уж восстановите как-нибуть сами.
-					</p>
-				</section>
-				
-				<section class = "credit">
-					<h3 class = "sirvice-item-title">Кредит</h3>
-					<p>
-						Залезть в долговую яму стало проще!<br>
-						Кредитные консультанты придут вам на помощь.
-					</p>
-					<a class = "btn delivery-btn" href="#">Отправить заявку</a>
-				</section>
+				<div class="service-wrapper">
+					<ul class = "services-list">
+						<li  class = "service-item active">
+							<button class = "service-btn" type = "button">Доставка</button>
+						</li>
+						<li  class = "service-item">
+							<button class = "service-btn" type = "button">Гарантия</button>
+						</li>
+						<li  class = "service-item">
+							<button class = "service-btn" type = "button">Кредит</button>
+						</li>
+					</ul>
+					
+					<section class = "service-delivery">
+						<h3 class = "sirvice-item-title">Доставка</h3>
+						<p>
+							Мы с удовольствием доставим ваш товар прямо<br>
+							к вашему подьезду совершенно бесплатно!<br>
+							Ведь мы неплохо заработаем,<br>
+							поднимая его на ваш етаж!
+						</p>
+					</section>
+					
+					<section class = "service-guarantee">
+						<h3 class = "sirvice-item-title">Гарантия</h3>
+						<p>
+							Если купленный у нас товар поломается или заискрит,<br>
+							а также в случае пожара, спровоцированного его возгаранием,<br>
+							вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+							сгоревшый товарна новый.<br>
+							Дом уж восстановите как-нибуть сами.
+						</p>
+					</section>
+					
+					<section class = "service-credit">
+						<h3 class = "sirvice-item-title">Кредит</h3>
+						<p>
+							Залезть в долговую яму стало проще!<br>
+							Кредитные консультанты придут вам на помощь.
+						</p>
+						<a class = "btn service-credit-btn" href="#">Отправить заявку</a>
+					</section>
+				</div>
 			</div>
 		</section>
 
-		<div class="container">
+		<div class="company-wrapper container">
 			<section class = "company">
-				<h2 class = "title">Компания "Техномарт"</h2>
+				<h2 class = "title">Компания &#171;Техномарт&#187;</h2>
 				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 				Техномарт работает со многими транспортными компаниями:</p>
@@ -311,7 +315,7 @@
 			<section class = "contacts">
 				<h2 class = "title">Контакты</h2>
 				<p>Вы можете забрать товар сами,<br>
-				заехать в наш офис:</p>
+				заехв в наш офис:</p>
 				<a class = "map-mini" href="#">
 					<img src="img/map.png" width="300" height="158" alt = "г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 				</a>
