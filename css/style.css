@@ -278,7 +278,6 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-info {
-	margin-right: 68px;
 	text-align: center;
 }
 
@@ -322,6 +321,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
+	margin-left: auto;
 	padding: 0;
 	width: 281px;
 	min-height: 45px;
@@ -329,6 +329,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav .user-btn {
+	position: relative;
 	display: block;
 	padding: 14px 24px 11px 25px;
 	font-size: 21px;
@@ -338,31 +339,36 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav .checkin {
-	position: relative;
 	padding-left: 48px;
 }
 
-.user-nav .checkin::before {
+.user-nav .checkin::before,
+.user-nav .user-name::before,
+.user-nav .user-name::after {
 	content: "";
 	position: absolute;
 	top: 50%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	opacity: 0.3;
+}
+
+.user-nav .checkin::before {
 	left: 14px;
 	width: 20px;
 	height: 17px;
 	margin-top: -8.5px;
 
 	background-image: url(../img/icon-login.svg);
-	background-position: 0 0;
-	background-repeat: no-repeat;
-
-	opacity: 0.3;
 }
 
 .user-nav .user-btn:hover {
 	color: #ee3643;
 }
 
-.user-nav .checkin:hover::before{
+.user-nav .user-btn:hover::before,
+.user-nav .user-btn:hover::after{
 	opacity: 1;
 }
 
@@ -370,12 +376,116 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.user-nav .checkin:active::before{
+.user-nav .user-btn:active::before,
+.user-nav .user-btn:active::after {
 	opacity: 0.3;
 }
 
-.site-nav {
-	
+.inner .user-block {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	width: 300px;
+}
+
+.inner .user-nav {
+	margin-left: 0;
+	margin-bottom: 7px;
+	width: 100%;
+}
+
+.user-nav .user-name {
+	padding-left: 47px;
+	padding-right: 67px;
+	width: 300px;
+
+	box-sizing: border-box;
+}
+
+.user-nav .user-name::before {
+	left: 13px;
+	width: 20px;
+	height: 18px;
+	margin-top: -9px;
+	background-image: url(../img/icon-user.svg);	
+}
+
+.user-nav .user-name::after {
+	right: 10px;
+	width: 21px;
+	height: 17px;
+	margin-top: -8.5px;
+	background-image: url(../img/icon-logout.svg);
+}
+
+.user-nav .user-name:hover {
+	color: #000000;
+}
+
+.user-nav .user-name:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.user-block .personal-area {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.personal-area li {
+	position: relative;
+}
+
+.personal-area li:first-child::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	width: 4px;
+	height: 4px;
+	margin-top: -1px;
+	background-color: #32425c;
+	border-radius: 50%;
+}
+
+.personal-area a {
+	position: relative;
+	display: block;
+	margin-left: 18px;
+	margin-right: 16px;
+	color: #32425c;
+}
+
+.personal-area a::after {
+	content: "";
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #32425c;
+}
+
+.personal-area a:hover,
+.personal-area a:focus {
+	color: #e9292a;
+}
+
+.personal-area a:hover::after,
+.personal-area a:focus::after {
+	background-color: #e9292a;
+}
+
+.personal-area a:active {
+	color: #32425c;
+	opacity: 0.3;
+}
+
+.personal-area a:active::after {
+	background-color: #32425c;
+	opacity: 0.3;
 }
 
 .site-nav ul {
@@ -1389,6 +1499,30 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 	box-shadow: inset 0 -112px 0 #f4f4f4,
 										0 0 40px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes motionShake {
+	0% {transform: translateX(-500px);}
+	70% {transform: translateX(30px);}
+	90% {transform: translateX(-10px);}
+	100% {transform: translateX(0);}
+}
+
+.modal-show {
+	display: block;
+	animation-name: motionShake;
+	animation-duration: 0.6s;
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+	20%, 40%, 60%, 80% { transform: translateX(10px);}
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 
 .modal-close {
